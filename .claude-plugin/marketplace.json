@@ -1,0 +1,11 @@
+{
+  "name": "cantiere",
+  "owner": { "name": "Stefano Gaborin" },
+  "plugins": [
+    {
+      "name": "cantiere",
+      "source": "./",
+      "description": "Impalcatura AI-first: reparti di agenti verticali + agenti trasversali, standard versionati, gate tecnico automatico."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "cantiere",
+  "version": "0.1.0",
+  "description": "Impalcatura AI-first: reparti verticali (dati, backend, frontend, stile) e agenti trasversali (architetto, sicurezza, collaudo, restauro) con best practices versionate. Due porte: /cantiere:genesis (progetto da zero) e /cantiere:adotta (progetto esistente).",
+  "author": { "name": "Stefano Gaborin" }
+}
