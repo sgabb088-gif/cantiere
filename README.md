@@ -4,17 +4,25 @@ Impalcatura personale per lo sviluppo AI-first con Claude Code: **reparti di age
 
 Il principio: **le istruzioni vivono in file sotto git, non nei prompt**. Se ti accorgi di rispiegare qualcosa a Claude, quella cosa va scritta in uno standard, in un agente o nella costituzione del progetto — una volta sola.
 
-## Installazione (una volta)
+## Installazione — una riga, su qualsiasi computer con Claude Code
 
-```
-claude
-/plugin marketplace add /Users/stefano/Desktop/dev/cantiere
-/plugin install cantiere@cantiere
+```bash
+claude plugin marketplace add sgabb088-gif/cantiere && claude plugin install cantiere@cantiere
 ```
 
-Il plugin vale per tutti i progetti. Aggiornarlo = modificare questi file (sono la fonte di verità).
+Vale per tutti i progetti di quel computer, per sempre. Per aggiornare dopo un push: `claude plugin update cantiere`.
 
-## Uso
+## Uso — un comando solo
+
+Apri `claude` nella cartella del progetto (nuovo o esistente) e scrivi:
+
+```
+/cantiere cosa vuoi, in parole tue
+```
+
+Capisce da solo la situazione: progetto senza regole → lo adotta (ricognizione in sola lettura, piano approvato da te prima di toccare codice); cartella nuova → lo crea da zero; progetto già adottato → esegue la richiesta come funzione/fix; parli di "pubblicare/deploy" → rilascia. Anche `/cantiere` da solo funziona: ti fa una domanda e parte.
+
+I flussi restano invocabili anche direttamente, per chi vuole la precisione:
 
 | Comando | Quando |
 |---|---|
